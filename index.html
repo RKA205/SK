@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghu Kul Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #0f0f0f, #1f1f1f);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .logo-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+    .school-logo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 5px solid #00ffcc;
+      box-shadow: 0 0 25px #00ffcc;
+      object-fit: cover;
+    }
+
+    .designer-photo {
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      object-fit: cover;
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    .designer-label {
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #cccccc;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    .typing {
+      font-size: 1.2em;
+      color: #cccccc;
+      border-right: 2px solid #00ffcc;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: blink 0.7s step-end infinite;
+      height: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #00ffcc; }
+    }
+
+    .glow-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid #00ffcc;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 15px #00ffcc;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .glow-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      background: #000;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+      transition: 0.3s ease;
+    }
+
+    .glow-button:hover {
+      background: #00ffcc;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .glow-box { padding: 15px; }
+      .designer-photo {
+        width: 50px;
+        height: 50px;
+        bottom: -10px;
+        right: -10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="school_logo.jpg" alt="School Logo" class="school-logo">
+      <img src="sumit_maurya.png" alt="Sumit Maurya" class="designer-photo">
+    </div>
+    <div class="designer-label">Designer of this website: Sumit Maurya</div>
+    <h1>Welcome to Raghu Kul Academy</h1>
+    <div class="typing" id="typing"></div>
+  </header>
+
+  <section class="glow-box">
+    <h2>About Us</h2>
+    <p>Raghu Kul Academy, located in Nai Chatra, Sonbhadra, is a CBSE-affiliated institution offering education from LKG to Class 10. Our mission is to provide quality education to build a bright future.</p>
+  </section>
+
+  <section class="glow-box">
+    <h2>Facilities</h2>
+    <ul style="list-style:none; padding:0">
+      <li>✅ Smart Digital Classrooms</li>
+      <li>✅ Science & Computer Labs</li>
+      <li>✅ Well-stocked Library</li>
+      <li>✅ GPS Vans & CCTV Surveillance</li>
+      <li>✅ SMS Alerts for Parents</li>
+    </ul>
+  </section>
+
+  <section class="glow-box">
+    <h2>Visit Our Official Website</h2>
+    <a href="Raghu Kul Academy3.html" class="glow-button" target="_blank">Go to Website</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Raghu Kul Academy | Designed by Sumit Maurya (Class 8A)
+  </footer>
+
+  <script>
+    const messages = [
+      "Empowering Young Minds...",
+      "Admissions Open for 2025-26 🚀",
+      "Smart Classes, Real Growth 📚",
+      "Top School in Sonbhadra 🌟",
+      "Website Designed by Sumit Maurya 💻"
+    ];
+
+    let i = 0, j = 0;
+    const typingDiv = document.getElementById("typing");
+
+    function type() {
+      if (j <= messages[i].length) {
+        typingDiv.textContent = messages[i].substring(0, j++);
+        setTimeout(type, 80);
+      } else {
+        setTimeout(erase, 1500);
+      }
+    }
+
+    function erase() {
+      if (j >= 0) {
+        typingDiv.textContent = messages[i].substring(0, j--);
+        setTimeout(erase, 50);
+      } else {
+        i = (i + 1) % messages.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    type();
+  </script>
+
+</body>
+</html>
