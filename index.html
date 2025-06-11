@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- ✅ SEO Meta Tags -->
   <title>Raghu Kul Academy - Best CBSE School in Sonbhadra</title>
-  <meta name="description" content="Welcome to Raghu Kul Academy, Nai Chatra Sonbhadra — CBSE school from LKG to Class 10. Admissions open for 2025. Smart classes, GPS vans, CCTV, and more.">
-  <meta name="keywords" content="Raghu Kul Academy, CBSE School Sonbhadra, Best School in Sonbhadra, Smart Classes, Sumit Maurya Website, Class 10, Admission Open">
+
+  <!-- Meta SEO Tags -->
+  <meta name="description" content="Raghu Kul Academy is a top CBSE school in Sonbhadra offering smart classes, science labs, GPS vans, and more. Designed by Sumit Maurya.">
+  <meta name="keywords" content="Raghu Kul Academy, Best School Sonbhadra, CBSE School, Digital Classes, School Near Me, Sumit Maurya">
   <meta name="author" content="Sumit Maurya">
 
-  <!-- ✅ Open Graph Tags (for WhatsApp, Facebook, etc.) -->
-  <meta property="og:title" content="Raghu Kul Academy - Official Website" />
-  <meta property="og:description" content="Top CBSE school in Sonbhadra. View facilities, admission info, and visit our official page. Designed by Sumit Maurya." />
-  <meta property="og:image" content="https://rka205.github.io/SK/school_logo.jpg" /> <!-- Update if needed -->
-  <meta property="og:url" content="https://rka205.github.io/SK/" />
-  <meta property="og:type" content="website" />
-  <meta name="google-site-verification" content="q4XR5-9Lws1a8UtjsxWZZBbA-posY8x7XXZRw1rZ2nk" />
+  <!-- Open Graph Tags (for WhatsApp, Facebook sharing) -->
+  <meta property="og:title" content="Raghu Kul Academy - Best CBSE School in Sonbhadra">
+  <meta property="og:description" content="Visit Raghu Kul Academy official website. Top CBSE school in Sonbhadra.">
+  <meta property="og:image" content="https://rka205.github.io/SK/school_logo.jpg">
+  <meta property="og:url" content="https://rka205.github.io/SK/">
+  <meta property="og:type" content="website">
 
-  <!-- ✅ Favicon (Optional) -->
-  <link rel="icon" href="https://rka205.github.io/SK/favicon.ico" type="image/x-icon" />
+    <meta name="google-site-verification" content="q4XR5-9Lws1a8UtjsxWZZBbA-posY8x7XXZRw1rZ2nk" />
 
   <style>
     body {
@@ -30,19 +28,16 @@
       text-align: center;
       padding: 20px;
     }
-
     header {
       margin-top: 20px;
       position: relative;
     }
-
     .logo-container {
       position: relative;
       width: 200px;
       height: 200px;
       margin: 0 auto;
     }
-
     .school-logo {
       width: 100%;
       height: 100%;
@@ -51,7 +46,6 @@
       box-shadow: 0 0 25px #00ffcc;
       object-fit: cover;
     }
-
     .designer-photo {
       position: absolute;
       bottom: -15px;
@@ -63,20 +57,17 @@
       object-fit: cover;
       box-shadow: 0 0 15px #00ffcc;
     }
-
     .designer-label {
       font-size: 0.9em;
       margin-top: 5px;
       color: #cccccc;
     }
-
     h1 {
       font-size: 2.8em;
       color: #00ffcc;
       text-shadow: 0 0 10px #00ffcc;
       margin-bottom: 10px;
     }
-
     .typing {
       font-size: 1.2em;
       color: #cccccc;
@@ -88,12 +79,10 @@
       height: 1.5em;
       margin-bottom: 20px;
     }
-
     @keyframes blink {
       0%, 100% { border-color: transparent; }
       50% { border-color: #00ffcc; }
     }
-
     .glow-box {
       background: rgba(0, 0, 0, 0.3);
       border: 1px solid #00ffcc;
@@ -103,7 +92,6 @@
       max-width: 700px;
       margin: 20px auto;
     }
-
     .glow-button {
       display: inline-block;
       margin-top: 20px;
@@ -117,19 +105,16 @@
       box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
       transition: 0.3s ease;
     }
-
     .glow-button:hover {
       background: #00ffcc;
       color: #000;
       transform: scale(1.05);
     }
-
     footer {
       margin-top: 50px;
       font-size: 0.9em;
       color: #888;
     }
-
     @media (max-width: 600px) {
       h1 { font-size: 2em; }
       .glow-box { padding: 15px; }
@@ -146,8 +131,8 @@
 
   <header>
     <div class="logo-container">
-      <img src="school_logo.jpg" alt="School Logo" class="school-logo">
-      <img src="sumit_maurya.png" alt="Sumit Maurya" class="designer-photo">
+      <img src="school_logo.jpg" alt="Raghu Kul Academy School Logo" class="school-logo">
+      <img src="sumit_maurya.png" alt="Sumit Maurya - Website Designer" class="designer-photo">
     </div>
     <div class="designer-label">Designer of this website: Sumit Maurya</div>
     <h1>Welcome to Raghu Kul Academy</h1>
@@ -187,10 +172,8 @@
       "Top School in Sonbhadra 🌟",
       "Website Designed by Sumit Maurya 💻"
     ];
-
     let i = 0, j = 0;
     const typingDiv = document.getElementById("typing");
-
     function type() {
       if (j <= messages[i].length) {
         typingDiv.textContent = messages[i].substring(0, j++);
@@ -199,7 +182,6 @@
         setTimeout(erase, 1500);
       }
     }
-
     function erase() {
       if (j >= 0) {
         typingDiv.textContent = messages[i].substring(0, j--);
@@ -209,7 +191,6 @@
         setTimeout(type, 500);
       }
     }
-
     type();
   </script>
 
