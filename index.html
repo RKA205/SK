@@ -125,6 +125,25 @@
         right: -10px;
       }
     }
+        .container {
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #00ffcc;
+      box-shadow: 0 0 25px #00ffcc, 0 0 40px #00ffcc;
+      object-fit: cover;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.1);
+    }
+    
   </style>
 </head>
 <body>
@@ -193,6 +212,11 @@
     }
     type();
   </script>
+    <div class="container">
+    <img src="https://assets.onecompiler.app/43m8dvjjn/43mhe7aua/1000042402.jpg" alt="Sumit Maurya" class="profile-pic">
+    <h1>SUMIT MAURYA</h1>
+    <h2>Software Engineer 💻 🚀</h2>
+  </div>
 
 </body>
 </html>
